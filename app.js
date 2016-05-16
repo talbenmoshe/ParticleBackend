@@ -45,10 +45,6 @@ particle.login({username: Config.particle.username, password: Config.particle.pa
 
 var app = express();
 
-// TODO: Remove to config or whatever
-var appSecretKey = '0cce4fcf-b8bc-47b9-a718-06778943d95d';
-var googleMapAPIKey = 'AIzaSyDbOPmbO-Gzn_irNhJcN10DJvah8FjIq_o';
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
