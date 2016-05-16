@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js", type="text/javascript")
+        script(src="//static.parastorage.com/services/js-sdk/1.64.0/js/wix.min.js", type="text/javascript")
+        script(src="/javascripts/socket.io.js", type="text/javascript")
+    body
+        block content
+        script(type="text/javascript").
+            var socket = io.connect();
+            socket.on('connect', function (data) {
+                socket.emit('join', 'aaaaaaaaaa');
+            });
+            socket.on('message', function (data) {
+                $("h1").html(data);
+                console.log("Data Received: " + data);
+                dododo(data);
+            });
+
