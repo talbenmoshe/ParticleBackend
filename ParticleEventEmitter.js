@@ -10,6 +10,9 @@ function ParticleEventEmitter() {
 }
 util.inherits(ParticleEventEmitter, EventEmitter);
 
+
+
+
 const particleEventEmitter = new ParticleEventEmitter();
 // ParticleEventEmitter.on('event', function() {
 //     console.log('an event occurred!');
