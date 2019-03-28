@@ -11,6 +11,8 @@ var Particle = require('particle-api-js');
 var PrticleEventEmitter = require('./ParticleEventEmitter');
 var Config = require('./config');
 
+
+
 var particle = new Particle();
 var accessToken;
 
